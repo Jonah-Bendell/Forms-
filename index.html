@@ -3,9 +3,96 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Two Truths and a Lie</title>
 </head>
-<body>
+<body style="background-color: beige;">
+    <h1>Mr Sieg's Truth and Lie Game</h1>
+    <hr>
+    <h2>Introductions</h2>
+    <form action="" id="name-form">
+        <label for="fname">First Name:</label><br>
+        <input type="text" name="fname" id="fname"><br>
+        <label for="lname">Last Name:</label><br>
+        <input type="text" name="lname" id="lname"><br>
+        <label for="age">Age:</label><br>
+        <input type="text" name="age" id="age"><br>
+    </form>
+    <br>
+    <input type="button" value="SUBMIT" onclick="greet();">
+    <p id="greet" style="font-size: x-large;">Welcome!</p>
+
+
+    <h2>Warm up trivia question</h2>
+    <p>What is the only food that cannot go bad?</p>
+ 
+    <form action="">
+        <input type="radio" name="trivia1" id="chocolate">
+        <label for="chocolate">Dark Chocolate</label><br>
+        <input type="radio" name="trivia1" id="tuna">
+        <label for="tuna">Canned Tuna</label><br>
+        <input type="radio" name="trivia1" id="honey">
+        <label for="honey">Honey</label><br>
+    </form>
+    <input type="button" value="SUBMIT" onclick="trivia1();">
+    <p id="trivia1-answer"></p>
+
+
+
+    <h2>2 Truths and 1 Lie </h2>
+    <p>Guess the lie</p>
+ 
+    <form action="">
+        <input type="radio" name="trivia1" id="watch">
+        <label for="watch">I've made watches</label><br>
+        <input type="radio" name="trivia1" id="MUN">
+        <label for="MUN">I am an MUN national champion</label><br>
+        <input type="radio" name="trivia1" id="countries">
+        <label for="countries">I've lived in 3 countries</label><br>
+    </form>
+    <input type="button" value="SUBMIT" onclick="twoTruthsOneLie();">
+    <p id="twoTruthsOneLieAnswer"></p>
+
     
+
+    <h2>More Trivia </h2>
+    <p>2 are correct get both</p>
+ 
+    <form action="">
+        <input type="checkbox" name="trivia2" id="president">
+        <label for="leader">President of Gambia is Dawda Jawara</label><br>
+        <input type="checkbox" name="trivia2" id="nobel">
+        <label for="nobel">Does linus pauling has 2 nobel prizes</label><br>
+        <input type="checkbox" name="trivia2" id="organ">
+        <label for="organ">The largest human organ is the small intestine</label><br>
+    </form>
+    <input type="button" value="SUBMIT" onclick="trivia2();">
+    <p id="trivia2Answer"></p>
+
+
+
+
+    <script src="js/truth.js"></script>
+
+
+<form>
+  <label for="username">Username:</label><br>
+  <input type="text" id="username" name="username"><br>
+  <label for="pwd">Password:</label><br>
+  <input type="password" id="pwd" name="pwd">
+</form>
+
+ <h2>Trivia: Which element has the chemical symbol "Na"?</h2>
+
+<form id="triviaForm">
+  <label><input type="checkbox" id="hydrogen"> Hydrogen</label><br>
+  <label><input type="checkbox" id="sodium"> Sodium</label><br>
+  <label><input type="checkbox" id="nitrogen"> Nitrogen</label><br>
+</form>
+
+<p id="triviaAnswer"></p>
+<p>Time left: <span id="timer">15</span>s</p>
+<button onclick="checkTrivia()">Lock Answer</button>
+
+
 </body>
 </html>
